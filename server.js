@@ -24,3 +24,6 @@ app.post('/', (req, res) => {
 app.listen(PORT, () => {
   console.log('Your bot is listening')
 })
+
+const sendMessage = {}
+const makeMessage = []
