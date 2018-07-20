@@ -4,7 +4,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const favicon = require('serve-favicon')
 const cors = require('cors')
-const { PORT } = process.env || 3000
+const { PORT } = process.env
 const app = express()
 // const Drift = require('drift-chat')
 
