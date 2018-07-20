@@ -17,7 +17,7 @@ app.get('/', async (request, response) => {
 
 app.post('/', (req, res) => {
   console.log(req.body)
-  if (!data) return res.send(400)
+  if (!res.ok) return res.send(400)
 })
 
 app
