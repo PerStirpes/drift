@@ -10,3 +10,5 @@
 [api](https://devdocs.drift.com/docs/using-drift-apis)
 
 [ngrok](https://ngrok.com)
+
+[How to Create a Chatbot From Scratch In Under An Hour](https://blog.drift.com/how-to-make-a-chatbot/)
