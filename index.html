@@ -1,0 +1,486 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <style>
+    /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+    /* Document
+       ========================================================================== */
+
+    /**
+     * Use a better box model (opinionated).
+     */
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    /**
+     * Use a more readable tab size (opinionated).
+     */
+
+    :root {
+      -moz-tab-size: 4;
+      tab-size: 4;
+    }
+
+    /**
+     * 1. Correct the line height in all browsers.
+     * 2. Prevent adjustments of font size after orientation changes in iOS.
+     */
+
+    html {
+      line-height: 1.15;
+      /* 1 */
+      -webkit-text-size-adjust: 100%;
+      /* 2 */
+    }
+
+    /* Sections
+       ========================================================================== */
+
+    /**
+     * Remove the margin in all browsers.
+     */
+
+    body {
+      margin: 0;
+    }
+
+    /**
+     * Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+     */
+
+    body {
+      font-family: -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol';
+    }
+
+    /* Grouping content
+       ========================================================================== */
+
+    /**
+     * Add the correct height in Firefox.
+     */
+
+    hr {
+      height: 0;
+    }
+
+    /* Text-level semantics
+       ========================================================================== */
+
+    /**
+     * Add the correct text decoration in Chrome, Edge, and Safari.
+     */
+
+    abbr[title] {
+      text-decoration: underline dotted;
+    }
+
+    /**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    /**
+     * 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
+
+    /**
+     * Add the correct font size in all browsers.
+     */
+
+    small {
+      font-size: 80%;
+    }
+
+    /**
+     * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+     */
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    /* Forms
+       ========================================================================== */
+
+    /**
+     * 1. Change the font styles in all browsers.
+     * 2. Remove the margin in Firefox and Safari.
+     */
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      /* 1 */
+      font-size: 100%;
+      /* 1 */
+      line-height: 1.15;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+    }
+
+    /**
+     * Remove the inheritance of text transform in Edge and Firefox.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+
+    button,
+    select {
+      /* 1 */
+      text-transform: none;
+    }
+
+    /**
+     * Correct the inability to style clickable types in iOS and Safari.
+     */
+
+    button,
+    [type='button'],
+    [type='reset'],
+    [type='submit'] {
+      -webkit-appearance: button;
+    }
+
+    /**
+     * Remove the inner border and padding in Firefox.
+     */
+
+    button::-moz-focus-inner,
+    [type='button']::-moz-focus-inner,
+    [type='reset']::-moz-focus-inner,
+    [type='submit']::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    /**
+     * Restore the focus styles unset by the previous rule.
+     */
+
+    button:-moz-focusring,
+    [type='button']:-moz-focusring,
+    [type='reset']:-moz-focusring,
+    [type='submit']:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+
+    /**
+     * Correct the padding in Firefox.
+     */
+
+    fieldset {
+      padding: 0.35em 0.75em 0.625em;
+    }
+
+    /**
+     * Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers.
+     */
+
+    legend {
+      padding: 0;
+    }
+
+    /**
+     * Add the correct vertical alignment in Chrome and Firefox.
+     */
+
+    progress {
+      vertical-align: baseline;
+    }
+
+    /**
+     * Correct the cursor style of increment and decrement buttons in Safari.
+     */
+
+    [type='number']::-webkit-inner-spin-button,
+    [type='number']::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    /**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+
+    [type='search'] {
+      -webkit-appearance: textfield;
+      /* 1 */
+      outline-offset: -2px;
+      /* 2 */
+    }
+
+    /**
+     * Remove the inner padding in Chrome and Safari on macOS.
+     */
+
+    [type='search']::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    /**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      /* 1 */
+      font: inherit;
+      /* 2 */
+    }
+
+    x
+    /* Interactive
+       ========================================================================== */
+
+    /*
+     * Add the correct display in Chrome and Safari.
+     */
+
+    summary {
+      display: list-item;
+    }
+  </style>
+
+  <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
+
+    !function () {
+      var t = window.drift = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+          t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function (e) {
+            t[ e ] = t.factory(e);
+          }), t.load = function (t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[ 0 ];
+            i.parentNode.insertBefore(o, i);
+          };
+      }
+    }();
+    drift.on('welcomeMessage:open', function () {
+      console.log('Welcome Message is open 🌞')
+    })
+    drift.on('welcomeMessage:close', function () {
+      console.log('Welcome Message is closed 🌞')
+    })
+    drift.identify("userId", {
+      email: 'abcd@example.com',
+      nickname: 'John Doe',
+      age: 21
+    })
+    drift.page('Home', { hey: 'homepage' })
+    drift.on('ready', function () {
+      drift.api.setUserAttributes({
+        email: 'abcd@example.com',
+        nickname: 'John Doe',
+        age: 21
+      })
+    })
+    drift.config({
+      locale: 'en-US',
+      messages: {
+        welcomeMessage: "Hey there! What's happening, what's up",
+        awayMessage: "Hey, we're not here right now, but leave a message.",
+        emailCaptureMessage: "Leave your email so we can get back to you.",
+        thankYouMessage: "Thanks we'll follow up soon."
+      },
+      enableWelcomeMessage: false,
+      enableCampaigns: false,
+      enableChatTargeting: false,
+      backgroundColor: '#000000',
+      foregroundColor: '#ffffff',
+      activeColor: '#00ff00',
+      textColor: '#ffffff',
+      autoAssignee: {
+        name: 'Matt BC',
+        title: 'Future Solutions Engineer',
+        email: 'matt@example.com',
+        avatarUrl: "https://avatars1.githubusercontent.com/u/19398470?s=460&v=4",
+      },
+      inboxId: 1,
+      cookieDomain: '.example.com',
+      welcomeMessageDelay: 5000,
+      disableNewConversations: true,
+    })
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('nh3abupcrxrh');
+  </script>
+  <style>
+    iframe#drift-widget.drift-widget-welcome-online {
+      bottom: 180px !important;
+    }
+  </style>
+  <title>Drift Demo</title>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="left">
+      <h1>Hi I'm a Drift Integration Demo. </h1>
+      <h2>Down below is a puppy!</h2>
+      <button label="I change color" name="favorite " type="button ">
+        <img src="black.png" alt="drift" />
+      </button>
+      <h3> click 👆 I change colors</h3>
+
+      <code><pre>
+</pre>
+      </code>
+
+
+      <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="name">Enter your name: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <label for="ice-cream-choice">Choose a flavor:</label>
+        <input list="ice-cream-flavors" name="ice-cream-choice" />
+
+        <datalist id="ice-cream-flavors">
+          <option value="Chocolate">
+            <option value="Coconut">
+              <option value="Mint">
+                <option value="Strawberry">
+                  <option value="Vanilla">
+        </datalist>
+        <div class="form-example">
+          <input type="submit" value="Subscribe!">
+        </div>
+      </form>
+
+
+    </div>
+    <script src="https://fast.wistia.com/embed/medias/szbiqn8gsy.jsonp " async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js " async></script>
+    <div class=" wistia_responsive_padding " style="padding:100.0% 0 0 0;position:relative; ">
+      <div class="right wistia_responsive_wrapper " style="height:100%;left:0;position:absolute;top:0;width:100%; ">
+        <div class="wistia_embed wistia_async_szbiqn8gsy videoFoam=true " style="height:100%;position:relative;width:100% ">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- End of Async Drift Code -->
+  <script>
+
+
+    window._wq = window._wq || [];
+    _wq.push({
+      id: "szbiqn8gsy ", options: { playerColor: "#341551" },
+      onHasData: function (video) {
+        var duration = video.duration()
+        var start
+        video.bind("play ", function () {
+          start = performance.now().toFixed(2)
+          analytics.track("Video Played ", {
+            category: 'Video',
+            label: video.name(),
+            percentWatched: video.percentWatched().toFixed(3) * 100,
+            start,
+          })
+        });
+
+        video.bind('pause', function () {
+          var _seconds = (performance.now().toFixed(2) - start) - duration
+          var _pause = _seconds / 1000
+          analytics.track('Video Paused', {
+            category: 'Video',
+            label: video.name(),
+            percentWatched: video.percentWatched().toFixed(3) * 100,
+            duration: _pause
+          })
+        })
+
+        video.bind("end ", function () {
+          analytics.track('Video End', {
+            category: 'Video',
+            label: video.name(),
+            percentWatched: video.percentWatched().toFixed(3) * 100,
+            stop: performance.now().toFixed(2),
+          })
+        });
+      }
+    })
+
+    var myImage = document.querySelector('img');
+
+    myImage.onclick = function () {
+      var mySrc = myImage.getAttribute('src');
+      if (mySrc === 'black.png') {
+        myImage.setAttribute('src', 'blue.png');
+      } else {
+        myImage.setAttribute('src', 'black.png');
+      }
+    }
+  </script>
+</body>
+
+</html>
