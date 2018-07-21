@@ -29,3 +29,5 @@ https://blog.drift.com/future-of-sales-email/
 
 
 https://blog.drift.com/inbound-automation-whiteboard-lessons/
+
+https://blog.drift.com/drift-platform/
