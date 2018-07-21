@@ -24,3 +24,5 @@ https://blog.drift.com/hire-better-marketers/
 https://blog.drift.com/why-g-joined-drift/
 
 https://blog.drift.com/how-to-build-a-vip-customer-experience/
+
+https://blog.drift.com/future-of-sales-email/
