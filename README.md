@@ -19,3 +19,6 @@
 
 [](https://blog.drift.com/how-to-make-a-chatbot/)
 https://blog.drift.com/hire-better-marketers/
+
+
+https://blog.drift.com/why-g-joined-drift/
