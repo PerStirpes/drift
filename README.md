@@ -34,3 +34,5 @@ https://blog.drift.com/drift-platform/
 
 
 https://blog.drift.com/all-about-chatbots/
+
+https://blog.drift.com/bots-vs-humans/
