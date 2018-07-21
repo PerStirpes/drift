@@ -14,3 +14,5 @@
 [How to Create a Chatbot From Scratch In Under An Hour](https://blog.drift.com/how-to-make-a-chatbot/)
 
 [chat bot report](https://blog.drift.com/chatbots-report/)
+
+[schedule a meeting](https://blog.drift.com/schedule-a-meeting/)
