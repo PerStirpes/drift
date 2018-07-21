@@ -26,3 +26,6 @@ https://blog.drift.com/why-g-joined-drift/
 https://blog.drift.com/how-to-build-a-vip-customer-experience/
 
 https://blog.drift.com/future-of-sales-email/
+
+
+https://blog.drift.com/inbound-automation-whiteboard-lessons/
