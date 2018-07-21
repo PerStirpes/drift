@@ -3,7 +3,7 @@
 #### references
 
 [official drift demo](http://embed.vidyard.com/share/eZmcT9Fur9Hdh9UC9yuoQh)
-
+[comprehensive onboarding](https://help.drift.com/article/comprehensive-onboarding-guide/)
 
 [dad joke](https://icanhazdadjoke.com/api#fetch-a-dad-joke)
 
